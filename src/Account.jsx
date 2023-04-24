@@ -116,7 +116,7 @@ export default function Account({ session }) {
         <img src={qr_link}></img>
         <audio controls>
             {console.log(audio_link)}
-        <source src={audio_link} type="audio/wav"/>
+        {loading ? 'loading' : <source src={audio_link} type="audio/wav"/>}
         </audio>
     </div>
   )
